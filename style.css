@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    resize: none;
+}
+
+/* Variaveis CSS */
+:root {
+    --font_bebas: 'Bebas Neue', cursive;
+    --font_poppins: 'Poppins', sans-serif;
+    --font_deca: 'Lexend Deca', sans-serif;
+    --verde: #518F4B;
+    --branco_pastel: #EEE5DA;
+
+}
+
+.alinhamento {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* ----------- Cabeçalho ----------- */
+header {
+    background-color: var(--verde);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 60px;
+    order: 2;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--font_deca);
+    font-weight: 100;
+}
+
+
+.menu a:hover {
+    color: #f6e7d5;
+    transition: 0.3s;
+}
+
+.link_logo {
+    border-bottom: none;
+}
+
+/* ----------- Quem somos ---------- */
+main {
+    background-color: var(--verde);
+}
+
+h1 {
+    position: absolute;
+    left: -999em;
+    width: 1em;
+    overflow: hidden;
+
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 0px;
+    margin-bottom: 150px;
+}
+
+.primeira_foto {
+    width: 600px;
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.);
+    border-radius: 0px;
+}
+
+.quem_somos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font_bebas);
+    font-size: 80px;
+    color: var(--branco_pastel);
+    background-color: #322626;
+    padding: 100px;
+}
+
+.icone {
+    width: 110px;
+    margin-bottom: 100px;
+}
+
+.sobre {
+    text-align: center;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre_titulo {
+    font-family: var(--font_deca);
+    font-size: 60px;
+}
+
+.sobre_texto {
+    font-family: var(--font_poppins);
+    font-size: 25px;
+}
+
+.btn_esg {
+    background-color: var(--branco_pastel);
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    box-shadow: 5px 5px 40px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn_esg a {
+    color: #322626;
+    text-decoration: none;
+    font-family: var(--font_deca);
+}
+
+.btn_esg:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    box-shadow: 0px 4px 0px 0px rgba(171, 148, 148, 0.5);
+}
+
+
+
+/* Data de lançamento */
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font_deca);
+    font-size: 80px;
+    color: #ffffff;
+    background-image: url(./img/artem-stoliar-F601XJbR258-unsplash.jpg);
+    background-size: cover;
+    padding: 150px;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+/* ----------- Imagens ----------- */
+
+.imagens {
+    background-color: var(--verde);
+    padding-bottom: 100px;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imgs>* {
+    width: 475px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ESG */
+.esg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    padding: 100px 0;
+    background-color: white;
+    width: 100%;
+}
+
+.sobre_esg {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sobre_esg_titulo {
+    font-family: var(--font_deca);
+    font-size: 50px;
+    color: #518F4B;
+}
+
+.sobre_esg_texto {
+    font-family: var(--font_poppins);
+    font-size: 20px;
+    color: #322626;
+}
+
+.esg img {
+    width: 400px;
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+}
+
+/* Formulario */
+
+.formulario {
+    background-color: #322626;
+    padding: 100px 0;
+}
+
+.formulario_titulo {
+    font-family: var(--font_deca);
+    font-size: 50px;
+    color: var(--branco_pastel);
+    text-align: center;
+    margin: 15px;
+    padding-bottom: 50px;
+}
+
+form {
+    color: white;
+    font-family: var(--font_poppins);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 25px;
+}
+
+input {
+    height: 35px;
+    padding: 20px;
+}
+
+.borda {
+    border: 2px solid var(--branco_pastel);
+    border-radius: 15px;
+}
+
+.btn_forms {
+    background-color: var(--branco_pastel);
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    font-family: var(--font_deca);
+    color: #322626;
+    margin: 0 auto;
+}
+
+.btn_forms:hover {
+    color: var(--branco_pastel);
+    background-color: #493d3d;
+    transform: scale(1.1);
+    transition: 0.2s;
+    box-shadow: 0px 5px 0px 0px rgba(171, 148, 148, 1);
+}
+
+
+
+/* Contato */
+
+.mapa {
+    width: 580px;
+}
+
+.contato {
+    padding: 90px 0;
+}
+
+.contato_titulo {
+    font-family: var(--font_deca);
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--branco_pastel);
+}
+
+.conteudo_contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.borda_mapa {
+    border: 8px solid #322626;
+    width: 595px;
+    height: 368px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.borda_mapa iframe {
+    border-radius: 10px;
+}
+
+.contato_info {
+    font-family: var(--font_poppins);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info>p {
+    color: var(--branco_pastel);
+}
+
+.info>i {
+    margin-right: 20px;
+    color: #322626;
+}
+
+/* footer */
+
+footer {
+    background-color: #322626;
+    color: #fff;
+    font-family: var(--font_poppins);
+    font-size: 19px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsividade */
+/* Larguras da telas: 
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768 até 992px
+Desktop 992px até 1200px
+Grandes telas: acima de 1200 */
+
+@media screen and (max-width: 1440px) {
+
+    .alinhamento {
+        width: 100%;
+    }
+
+    nav {
+        padding: 0 50px;
+    }
+
+    .sobre {
+        max-width: 500px;
+    }
+
+    .quem_somos {
+        padding: 100px 50px;
+    }
+
+    .imgs {
+        flex-wrap: wrap;
+    }
+
+    .sobre_esg_texto {
+        font-size: 26px;
+    }
+
+    .esg img {
+        width: 50%;
+    }
+
+    .esg {
+        padding: 100px 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .primeira_foto {
+        width: 550px;
+    }
+
+    .esg img {
+        width: 45%;
+    }
+
+    .data {
+        font-size: 65px;
+    }
+
+    .sobre_esg {
+        width: 480px;
+    }
+
+    .sobre_esg_texto {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .quem_somos {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .sobre {
+        margin-top: 30px;
+    }
+
+    .imgs {
+        gap: 50px;
+    }
+
+    .data {
+        font-size: 55px;
+        margin-top: -30px;
+    }
+
+    .esg {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+
+    .sobre_esg {
+        width: 580px;
+    }
+
+    .conteudo_contato {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+
+}
+
+@media screen and (min-width: 900px) {
+    #burguer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 786px) {
+
+
+
+
+
+    #burguer {
+        display: flex;
+        color: white;
+        font-size: 55px;
+        padding-left: 550px;
+
+    }
+
+
+    #itens {
+        position: absolute;
+        height: 92vh;
+        width: 50vw;
+        top: 12vh;
+        right: 0;
+        background-color: #5d8f59;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        border-radius: 20px;
+    }
+
+    .menu li {
+        padding: 50px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .data {
+        font-size: 35px;
+    }
+
+    .link_logo {
+        position: absolute;
+        left: -999em;
+        width: 1em;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    #burguer {
+        padding-left: 500px;
+    }
+
+    .primeira_foto {
+        width: 450px;
+    }
+
+    .data {
+        font-size: 26px;
+    }
+
+    .esg img {
+        width: 70%;
+    }
+
+    .sobre_esg_texto {
+        padding: 0 40px;
+    }
+
+    .mapa {
+        width: 500px;
+    }
+
+    .borda_mapa {
+        width: 480px;
+    }
+
+    .conteudo_contato {
+        align-items: center;
+        justify-content: center;
+    }
+}
